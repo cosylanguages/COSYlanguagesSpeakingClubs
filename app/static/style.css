@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.sidebar {
+    width: 200px;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 1rem;
+}
