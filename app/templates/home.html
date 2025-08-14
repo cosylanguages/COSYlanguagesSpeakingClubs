@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Clubs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Speaking Clubs</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Filters</h2>
+            <form action="/" method="get">
+                <div class="filter-group">
+                    <label for="language">Language:</label>
+                    <select id="language" name="language">
+                        <option value="">All Languages</option>
+                        <option value="en" {% if selected_language == 'en' %}selected{% endif %}>English</option>
+                        <option value="fr" {% if selected_language == 'fr' %}selected{% endif %}>French</option>
+                        <option value="br" {% if selected_language == 'br' %}selected{% endif %}>Breton</option>
+                        <option value="it" {% if selected_language == 'it' %}selected{% endif %}>Italian</option>
+                        <option value="es" {% if selected_language == 'es' %}selected{% endif %}>Spanish</option>
+                        <option value="pt" {% if selected_language == 'pt' %}selected{% endif %}>Portuguese</option>
+                        <option value="de" {% if selected_language == 'de' %}selected{% endif %}>German</option>
+                        <option value="ru" {% if selected_language == 'ru' %}selected{% endif %}>Russian</option>
+                        <option value="tt" {% if selected_language == 'tt' %}selected{% endif %}>Tatar</option>
+                        <option value="ba" {% if selected_language == 'ba' %}selected{% endif %}>Bashkir</option>
+                        <option value="cv" {% if selected_language == 'cv' %}selected{% endif %}>Chuvash</option>
+                        <option value="hy" {% if selected_language == 'hy' %}selected{% endif %}>Armenian</option>
+                        <option value="ka" {% if selected_language == 'ka' %}selected{% endif %}>Georgian</option>
+                        <option value="el" {% if selected_language == 'el' %}selected{% endif %}>Greek</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="level">Level:</label>
+                    <select id="level" name="level">
+                        <option value="">All Levels</option>
+                        <option value="a0" {% if selected_level == 'a0' %}selected{% endif %}>A0</option>
+                        <option value="a1" {% if selected_level == 'a1' %}selected{% endif %}>A1</option>
+                        <option value="a2" {% if selected_level == 'a2' %}selected{% endif %}>A2</option>
+                        <option value="b1" {% if selected_level == 'b1' %}selected{% endif %}>B1</option>
+                        <option value="b2" {% if selected_level == 'b2' %}selected{% endif %}>B2</option>
+                        <option value="c1" {% if selected_level == 'c1' %}selected{% endif %}>C1</option>
+                        <option value="c2" {% if selected_level == 'c2' %}selected{% endif %}>C2</option>
+                    </select>
+                </div>
+            </form>
+        </aside>
+        <main class="content">
+            <h2>Available Clubs</h2>
+            <div class="club-list-container">
+                {% if clubs %}
+                    <ul class="club-list">
+                        {% for club in clubs %}
+                            <li>
+                                <h3><a href="{{ url_for('club_detail', club_key=club.key) }}">{{ club.name }}</a></h3>
+                                <p>
+                                    {% if club.name == "The Greatest Quotes" %}
+                                        {{ club.quote[:100] }}...
+                                    {% elif club.name == "Keeping Up With Science" %}
+                                        {{ club.summary[:100] }}...
+                                    {% elif club.name == "Let's Celebrate" or club.name == "Let's Celebrate: Science Edition" %}
+                                        A day to celebrate {{ club.holiday_name }}.
+                                    {% endif %}
+                                </p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>No clubs found for the selected filters.</p>
+                {% endif %}
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

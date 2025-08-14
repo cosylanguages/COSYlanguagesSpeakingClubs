@@ -1,0 +1,178 @@
+# app/data.py
+
+greatest_quotes_club = {
+    "name": "The Greatest Quotes",
+    "language": "en",
+    "level": "b2",
+    "quote": "I can think of nothing less pleasurable than a life devoted to pleasure.",
+    "author": "John D. Rockefeller",
+    "vocabulary": [
+        {"word": "Pleasurable", "definition": "Enjoyable, pleasant."},
+        {"word": "Devoted", "definition": "Giving all or a large part of one's time or resources to a person, activity, or cause."},
+        {"word": "Pleasure", "definition": "A feeling of happy satisfaction and enjoyment."},
+        {"word": "Think", "definition": "Have a particular opinion, belief, or idea about someone or something."},
+        {"word": "Life", "definition": "The existence of an individual human being or animal."},
+        {"word": "Nothing", "definition": "Not anything, no single thing."},
+        {"word": "Less", "definition": "A smaller amount of something."},
+        {"word": "Devotion", "definition": "Love, loyalty, or enthusiasm for a person, activity, or cause."},
+        {"word": "Satisfaction", "definition": "Fulfillment of one's wishes, expectations, or needs."},
+        {"word": "Enjoyment", "definition": "The state or process of taking pleasure in something."}
+    ],
+    "round_one_questions": [
+        "Does the author believe a life of pleasure is good?",
+        "Is the quote about the importance of hard work?",
+        "Does the author value pleasure?",
+        "Is the quote from a famous philosopher?",
+        "Does the quote suggest that a life of constant fun is unfulfilling?",
+        "Is the author promoting a simple life?",
+        "Is the word 'devoted' used in a positive way here?",
+        "Is this a modern quote?",
+        "Does the quote imply that there are more important things than pleasure?",
+        "Could this quote be interpreted as a paradox?"
+    ],
+    "round_two_statements": [
+        "A life devoted to pleasure is the best kind of life.",
+        "True happiness comes from purpose, not from pleasure.",
+        "John D. Rockefeller was right about pleasure.",
+        "This quote is too simplistic.",
+        "Modern society is too focused on pleasure.",
+        "It is impossible to be 'devoted' to pleasure.",
+        "This quote is inspiring.",
+        "People who seek pleasure all the time are usually unhappy.",
+        "The pursuit of pleasure is a valid life goal.",
+        "This quote applies to everyone."
+    ]
+}
+
+science_club = {
+    "name": "Keeping Up With Science",
+    "language": "en",
+    "level": "b2",
+    "article_title": "Unprecedented Climate Shocks Are Changing the Great Lakes Forever",
+    "article_link": "https://www.sciencedaily.com/releases/2025/08/250813083616.htm",
+    "summary": "Extreme heat waves and cold spells on the Great Lakes have more than doubled since the late 1990s, coinciding with a major El Niño event. Using advanced ocean-style modeling adapted for the lakes, researchers traced temperature trends back to 1940.",
+    "vocabulary": [
+        {"word": "Unprecedented", "definition": "Never done or known before."},
+        {"word": "Climate", "definition": "The weather conditions prevailing in an area in general or over a long period."},
+        {"word": "Shocks", "definition": "Sudden, unexpected, and usually unpleasant events or experiences."},
+        {"word": "Coinciding", "definition": "Occurring at or during the same time."},
+        {"word": "Modeling", "definition": "The use of mathematical models to simulate real-life situations."},
+        {"word": "Extreme", "definition": "Reaching a high or the highest degree; very great."},
+        {"word": "Spells", "definition": "A short period of a particular type of weather."},
+        {"word": "Trends", "definition": "A general direction in which something is developing or changing."},
+        {"word": "Adapted", "definition": "Made suitable for a new use or purpose; modified."},
+        {"word": "Traced", "definition": "Found or discovered by investigation."}
+    ],
+    "round_one_questions": [
+        "Have extreme weather events on the Great Lakes decreased?",
+        "Did the study use old methods for modeling?",
+        "Is this study about the oceans?",
+        "Did the researchers look at temperature trends from the last 10 years only?",
+        "Was the El Niño event a minor factor?",
+        "Is the article about the effects of pollution?",
+        "Is the term 'unprecedented' used to mean 'common'?",
+        "Are the Great Lakes located in Europe?",
+        "Did the study find that the number of extreme weather events has stayed the same?",
+        "Does the summary mention anything about fish?"
+    ],
+    "round_two_statements": [
+        "Climate change is not a serious issue for the Great Lakes.",
+        "Computer modeling is a reliable way to study climate trends.",
+        "The El Niño event is the only cause of the changes in the Great Lakes.",
+        "We should not be concerned about these climate shocks.",
+        "This research is important for understanding the future of the Great Lakes.",
+        "The summary provides a complete picture of the research.",
+        "The vocabulary used in the summary is too complex for the general public.",
+        "More research is needed to confirm these findings.",
+        "The government should take action based on this research.",
+        "This kind of research is a waste of money."
+    ]
+}
+
+lets_celebrate_club = {
+    "name": "Let's Celebrate",
+    "holiday_name": "National Financial Awareness Day",
+    "holiday_link": "https://nationaltoday.com/national-financial-awareness-day/",
+    "language": "en",
+    "level": "b1", # Let's vary the level for this one
+    "vocabulary": [
+        {"word": "Financial", "definition": "Relating to finance or money."},
+        {"word": "Awareness", "definition": "Knowledge or perception of a situation or fact."},
+        {"word": "Donation", "definition": "Something that is given to a charity, especially a sum of money."},
+        {"word": "Wellness", "definition": "The state of being in good health, especially as an actively pursued goal."},
+        {"word": "Independence", "definition": "The fact or state of being independent."},
+        {"word": "Recovery", "definition": "A return to a normal state of health, mind, or strength."},
+        {"word": "Anniversary", "definition": "The date on which an event took place in a previous year."},
+        {"word": "Featured", "definition": "Having or including a prominent part or role."},
+        {"word": "Promotions", "definition": "Activities to increase the sales of a product or service."},
+        {"word": "Calendar", "definition": "A chart or series of pages showing the days, weeks, and months of a particular year."}
+    ],
+    "round_one_questions": [
+        "Is this holiday about spending money?",
+        "Is financial awareness important for everyone?",
+        "Is this a federal holiday?",
+        "Does the website mention any deals for this day?",
+        "Is this holiday celebrated in August?",
+        "Is the goal of this day to make people feel bad about their finances?",
+        "Are there any other holidays mentioned for the same day?",
+        "Is this holiday related to a specific historical event?",
+        "Does the website provide tips for financial wellness?",
+        "Is this a new holiday?"
+    ],
+    "round_two_statements": [
+        "Everyone should celebrate National Financial Awareness Day.",
+        "Schools should teach more about financial literacy.",
+        "It's easy to be financially aware in today's world.",
+        "This holiday is just a marketing gimmick.",
+        "Financial awareness is more important for older people.",
+        "I am good at managing my money.",
+        "Talking about money is taboo in my culture.",
+        "This holiday should be a global celebration.",
+        "I feel stressed when I think about my finances.",
+        "This website is a good resource for learning about holidays."
+    ]
+}
+
+science_celebration_club = {
+    "name": "Let's Celebrate: Science Edition",
+    "holiday_name": "National Day of Scientific Discovery",
+    "holiday_link": "#", # No real link for this invented holiday
+    "language": "en",
+    "level": "c1", # Let's make this one a higher level
+    "vocabulary": [
+        {"word": "Discovery", "definition": "The action or process of discovering or being discovered."},
+        {"word": "Scientific", "definition": "Based on or characterized by the methods and principles of science."},
+        {"word": "Innovation", "definition": "A new method, idea, product, etc."},
+        {"word": "Experiment", "definition": "A scientific procedure undertaken to make a discovery, test a hypothesis, or demonstrate a known fact."},
+        {"word": "Hypothesis", "definition": "A supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation."},
+        {"word": "Theory", "definition": "A supposition or a system of ideas intended to explain something, especially one based on general principles independent of the thing to be explained."},
+        {"word": "Analysis", "definition": "Detailed examination of the elements or structure of something."},
+        {"word": "Data", "definition": "Facts and statistics collected together for reference or analysis."},
+        {"word": "Research", "definition": "The systematic investigation into and study of materials and sources in order to establish facts and reach new conclusions."},
+        {"word": "Conclusion", "definition": "A judgment or decision reached by reasoning."}
+    ],
+    "round_one_questions": [
+        "Is this holiday about a specific person?",
+        "Is the main theme of this day about artistic creation?",
+        "Is a hypothesis the same as a theory?",
+        "Is data important in the scientific process?",
+        "Is this holiday only for professional scientists?",
+        "Is the scientific method a rigid, linear process?",
+        "Can a single experiment prove a theory to be true?",
+        "Is it important for scientists to share their findings?",
+        "Is 'innovation' a key part of scientific discovery?",
+        "Is this a real holiday?"
+    ],
+    "round_two_statements": [
+        "Scientific discovery is the most important driver of human progress.",
+        "Everyone should have a basic understanding of the scientific method.",
+        "Failure is an essential part of the scientific process.",
+        "The government should invest more money in scientific research.",
+        "Some things are better left undiscovered.",
+        "It is important to question scientific authority.",
+        "The pace of scientific discovery is too fast.",
+        "I am interested in science.",
+        "Scientific discoveries should always be used for the good of humanity.",
+        "The media does a good job of communicating scientific discoveries to the public."
+    ]
+}
