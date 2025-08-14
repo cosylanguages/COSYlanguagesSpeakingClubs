@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 1.5rem;
+    border-right: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+/* Club list styles */
+.club-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.club-list li {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.club-list h3 {
+    margin-top: 0;
+}
+
+.club-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.club-list a:hover {
+    color: #007bff;
+}
+
+/* Club detail page styles */
+.club-detail-page .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.club-detail-page h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.club-detail-page ul, .club-detail-page ol {
+    padding-left: 20px;
+}
+
+.club-detail-page li {
+    margin-bottom: 1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, abort, jsonify
-from data import greatest_quotes_club, science_club, lets_celebrate_club, science_celebration_club
+from .data import greatest_quotes_club, science_club, lets_celebrate_club, science_celebration_club
 
 app = Flask(__name__)
 

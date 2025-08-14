@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ club.name }} - Speaking Clubs</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 <body class="club-detail-page">
     <header>
-        <h1><a href="/">Speaking Clubs</a></h1>
+        <h1><a href="../index.html">Speaking Clubs</a></h1>
     </header>
     <div class="container">
         <main class="content">
@@ -46,7 +46,7 @@
                 <li>{{ statement }}</li>
                 {% endfor %}
             </ol>
-            <a href="/" class="back-link">Back to club list</a>
+            <a href="../index.html" class="back-link">Back to club list</a>
         </main>
     </div>
 </body>
