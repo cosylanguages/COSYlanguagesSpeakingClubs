@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ club.name }} - Speaking Clubs</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body class="club-detail-page">
+    <header>
+        <h1><a href="../index.html">Speaking Clubs</a></h1>
+    </header>
+    <div class="container">
+        <main class="content">
+            <h2>{{ club.name }}</h2>
+
+            {% if club.name == "The Greatest Quotes" %}
+                <blockquote>
+                    <p>"{{ club.quote }}"</p>
+                    <footer>- {{ club.author }}</footer>
+                </blockquote>
+            {% elif club.name == "Keeping Up With Science" %}
+                <h3><a href="{{ club.article_link }}" target="_blank">{{ club.article_title }}</a></h3>
+                <p>{{ club.summary }}</p>
+            {% elif club.name == "Let's Celebrate" or club.name == "Let's Celebrate: Science Edition" %}
+                <h3><a href="{{ club.holiday_link }}" target="_blank">{{ club.holiday_name }}</a></h3>
+            {% endif %}
+
+            <h3>Vocabulary</h3>
+            <ul>
+                {% for item in club.vocabulary %}
+                <li><strong>{{ item.word }}:</strong> {{ item.definition }}</li>
+                {% endfor %}
+            </ul>
+
+            <h3>Round One: Yes/No Questions</h3>
+            <ol>
+                {% for question in club.round_one_questions %}
+                <li>{{ question }}</li>
+                {% endfor %}
+            </ol>
+
+            <h3>Round Two: Agree/Disagree Statements</h3>
+            <ol>
+                {% for statement in club.round_two_statements %}
+                <li>{{ statement }}</li>
+                {% endfor %}
+            </ol>
+            <a href="../index.html" class="back-link">Back to club list</a>
+        </main>
+    </div>
+</body>
+</html>

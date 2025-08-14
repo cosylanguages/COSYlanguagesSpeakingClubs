@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 def get_random_quote():
     """
@@ -38,5 +39,6 @@ def get_random_quote():
         return "Could not fetch a quote at this time.", ""
 
 if __name__ == '__main__':
+    # Test the quote scraper
     quote, author = get_random_quote()
     print(f'"{quote}" - {author}')
