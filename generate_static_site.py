@@ -5,7 +5,7 @@ from flask import url_for
 from app.main import app, all_clubs
 
 # The directory to build the static site in
-BUILD_DIR = 'build'
+BUILD_DIR = 'docs'
 
 def generate_static_site():
     """Generates a static version of the website."""
@@ -47,7 +47,7 @@ def generate_static_site():
             with open(os.path.join(club_dir, f'{key}.html'), 'w') as f:
                 f.write(club_html)
 
-    print("Static site generated successfully in 'build' directory.")
+    print("Static site generated successfully in 'docs' directory.")
 
 if __name__ == '__main__':
     generate_static_site()
